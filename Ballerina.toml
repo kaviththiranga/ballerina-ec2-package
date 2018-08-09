@@ -1,0 +1,8 @@
+[project]
+org-name = "kavith"
+version = "0.0.1"
+license = "Apache-2.0"
+authors = ["Kavith Lokuhewage"]
+repository = "https://github.com/kaviththiranga/ballerina-ec2-package.git"
+keywords = ["ballerina", "Amazon", "EC2", "endpoint", "connector"]
+
