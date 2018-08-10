@@ -1,5 +1,6 @@
+
 documentation {
-    Define a EC2 Query
+    Define an EC2 Query
     F{{Action}}             -   The action to perform. Example: RunInstances
     F{{Version}}            -   The API version to use.
     F{{AWSAccessKeyId}}     -   The access key ID for the request sender. 
@@ -42,8 +43,8 @@ public type Query record {
     string? Expires;
     string? Timestamp;
     string Signature;
-    string SignatureMethod;
-    string SignatureVersion;
-    boolean? DryRun;
+    string SignatureMethod = "HmacSHA256";
+    int SignatureVersion = 2;
+    boolean? DryRun = false;
     string? SecurityToken;
 };
